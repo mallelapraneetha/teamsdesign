@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+
+	<!-- linking font awesome for icons -->
+	<link rel="stylesheet"
+		href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+	/* Define styles for blocks */
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border: 2px solid #2980b9;
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+            font-weight: bold;
+            margin: 20px;
+            float: left;
+        }
+		/* Whole html box designing */
+		html {
+			box-sizing: border-box;
+		}
+
+		/* Body width fixing */
+		body {
+			max-width: 100%
+		}
+
+		/* Box sizing depending on parent */
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		/* Styling column */
+		.column {
+			float: left;
+			width: 33%;
+			margin-bottom: 16px;
+			padding: 5px 10px;
+		}
+
+
+		/* Column width change depends on screen size */
+		@media screen and (max-width: 670px) {
+			.column {
+				width: 100%;
+				text-align: none;
+			}
+		}
+
+		/* Card designing */
+		.card {
+			background-color: gray;
+			border: 1px solid black;
+		}
+
+		.container {
+			padding: 0 16px;
+		}
+
+		/* Icon styling */
+		.fa {
+			margin: 10px;
+			font-size: 68px;
+
+		}
+
+		.fa:hover {
+			transform: rotateY(180deg);
+			transition: transform 0.8s;
+		}
+
+		.container::after,
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		/* Button designing */
+		.button {
+			border: none;
+			padding: 8px;
+			color: white;
+			background-color: #449D44;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		/* Hover effect on button */
+		.button:hover {
+			background-color: green;
+		}
+
+		/* Margining first member of team */
+		#gfg {
+			float: none;
+			margin: auto;
+		}
+	</style>
+</head>
+
+<body>
+<center>
+<h1> Team Page</h1>
+</center>
+<h2> Learn from scientists ,reasearch scholors from top institutes in the world </h2>
+<div class="block">Illinos</div>
+    <div class="block">cambridge </div>
+    <div class="block">harward</div>
+	<div class="block"> calfornia</div>
+    <div class="block">eth zurich</div>
+    <div class="block">max plack</div>
+	<div class="block">ISRO</div>
+    <div class="block">johns hopkins</div>
+    <div class="block">michigan state</div>
+	
+	
+	<center>
+		<h1> mentors</h1>
+		</center>
+		<hr>
+
+		<!-- First member of the team -->
+		
+
+		<!-- Other members of the team -->
+		<div class="row">
+			<div class="column">
+				<div class="card">
+					<i class="fa fa-user-circle"
+					style="font-size:68px;"></i>
+					<div class="container">
+						<h2>Ching Lee</h2>
+
+						<p>harward university</p>
+                      
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="card">
+					<i class="fa fa-user-circle"
+					style="font-size:68px;">
+					</i>
+					<div class="container">
+					
+						<h2>Hashim Ahmed</h2>
+						<p>university of calfornia</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<i class="fa fa-user-circle"
+						style="font-size:68px;">
+					</i>
+					<div class="container">
+					
+						<h2>Rihana Gomez</h2>
+						<p>cambridge university</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+	
+	<h1> mentors and advisors</h1>
+	<div class="column">
+				<div class="card">
+					<i class="fa fa-user-circle"
+						style="font-size:68px;">
+					</i>
+					<div class="container">
+					
+						<h2>Rihana Gomez</h2>
+						<p>principal project scientist IIT madras</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+					<i class="fa fa-user-circle"
+						style="font-size:68px;">
+					</i>
+					<div class="container">
+					
+						<h2>akhil tripathi</h2>
+						<button class = "button">
+						message him now 
+						</button>
+					</div>
+				</div>
+			</div>
+		
+</body>
+
+</html>
